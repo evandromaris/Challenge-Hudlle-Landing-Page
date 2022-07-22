@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background:  hsl(257, 40%, 49%) url(images/bg-desktop.svg) no-repeat;
+    background-size: auto 100vh;
+    background-attachment: fixed;
+    width: auto;
+    height: auto;
+}
+
+
+main{
+    padding: 45px;
+}
+
+main header img{
+    width: 210px;
+    display: block;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    
+}
+
+
+main .container{
+    display: flex;
+    margin-top: 70px;
+   
+}
+
+main .container section{
+    margin: 50px 80px;
+    color: #fff;
+}
+
+main .container section h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    width: 330px;
+}
+
+main .container section p {
+    width: 402px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+main .container section button {
+    width: 170px;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: #fff;
+    border: none;
+    color: hsl(257, 40%, 49%);
+    font-size: 14px;
+    box-shadow: 0px 2px 10px 0px rgb(65, 65, 65);
+    cursor: pointer;
+}
+
+main .container section button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+
+main nav {
+    right: 270px;
+    position: relative;
+    margin-top: 450px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+nav ul li {
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav ul li:hover{
+    border: 2px solid hsl(300, 69%, 71%);
+}
+
+nav ul li img {
+    width: 20px;
+    height: 20px;     
+}
+
+
+footer {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    font-size: 12px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover{
+    color: hsl(300, 69%, 71%);
+}
+
+@media (max-width: 900px){
+
+    body{
+        background-image: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: contain;
+        
+    }
+
+    main {
+        margin: 0 auto;
+        padding: 0%;
+        text-align: center;
+        width: 375px;
+      
+    }
+    
+    main header img{
+        width: 120px;
+        margin: 40px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        height: 100px;
+    }
+
+    .container img{
+        width: 330px;
+    }
+    main .container section  p{
+        width: auto;
+        font-size: 16px;
+    }
+       
+    main .container section button{
+        width: 220px;
+    }
+
+    .container nav{
+        position: relative;
+        bottom: 455px;
+        left: -10px;
+    }
+
+    nav ul li img{
+        width: 20px !important;
+        height: auto;
+    }
+
+    footer{
+        position: relative;
+        top: 600px;
+    }
+}
